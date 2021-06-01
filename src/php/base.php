@@ -25,7 +25,18 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-    <script>0</script> 
+    <script>0</script>
+    <header class="header">
+        <li class="navi-bar">
+            <ul class="nav-link <?php if ($GLOBALS['page'] == 'home') {echo "active-page"} ?>"><a href="<?php if ($GLOBALS['page'] == 'home') {echo '#'} else {echo $GLOBALS['site']}; ?>">Home</a></ul>
+            <ul class="nav-link <?php if ($GLOBALS['page'] == 'about') {echo "active-page"} ?>"><a href="<?php if ($GLOBALS['page'] == 'about') {echo '#'} else {echo $GLOBALS['site'].'about'}; ?>">About Flex</a></ul>
+            <ul class="nav-link <?php if ($GLOBALS['page'] == 'contact') {echo "active-page"} ?>"><a href="<?php if ($GLOBALS['page'] == 'contact') {echo '#'} else {echo $GLOBALS['site'].'contact'}; ?>">Contact Us</a></ul>
+        </li>
+        <li class="login-reg">
+            <ul>login</ul>
+            <ul>register</ul>
+        </li>
+    </header>
     <?php
         if ($GLOBALS['page'] !== NULL) {
             include $_SERVER['DOCUMENT_ROOT'].'/src/php/'.$GLOBALS['page'].'.php';
@@ -33,8 +44,8 @@
     ?>
     <div class='footer'>
         <div class="footer-information-area">
-            <p class='footer-60 center float-center'>Built with ♥ by Grey for <a class="footer-links" href="localhost:8080">FlexBot</a></p>
-            <p class='footer-40 center float-right'><a class="footer-links" href="#">Back To Top</a></p>
+            <p class='footer-60 center float-center'>Built with ♥ by Grey for <a class="footer-link" href="localhost:8080">FlexBot</a></p>
+            <p class='footer-40 center float-right'><a class="footer-link" href="#">Back To Top</a></p>
         </div>
         <hr>
         <div class="copyright">

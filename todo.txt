@@ -1,1 +1,5 @@
 TODO: Remove Back To Top And Lower Footer-Information-Area Margin If Screen Width Is Under A Certain Width
+TODO: Finish Nav    - Finish SASS For Main Header
+                    - Add Image To The Left Of Nav Links
+                    - Finish Routing For Login And Register
+                    - Check That The Page Is Nicely Scrollable By Putting Dummy Content Onto The Screen

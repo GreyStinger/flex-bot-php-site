@@ -7,16 +7,23 @@ include $_SERVER['DOCUMENT_ROOT'].'/src/core/Route.php';
 define ('BASEPATH', '/');
 
 $page = NULL;
+$site = 'https://flexbotlite.herokuapp.com/';
 
 Route::add('/', function() {
     $title = 'FlexBot';
-    $GLOBALS['page'] = 'index';
+    $GLOBALS['page'] = 'home';
     include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
 });
 
 Route::add('/about', function() {
     $title = 'About Flex';
-    $GLOBALS['page'] = 'about'
+    $GLOBALS['page'] = 'about';
+    include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
+});
+
+Route::add('/contact', function() {
+    $title = 'Contact Us';
+    $GLOBALS['page'] = 'contact';
     include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
 });
 
