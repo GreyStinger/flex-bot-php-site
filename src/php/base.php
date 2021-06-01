@@ -26,7 +26,7 @@
 </head>
 <body>
     <script>0</script>
-    <header class="header">
+    <div class="header">
         <li class="navi-bar">
             <ul class="nav-link <?php if ($GLOBALS['page'] == 'home') {echo "active-page"} ?>"><a href="<?php if ($GLOBALS['page'] == 'home') {echo '#'} else {echo $GLOBALS['site']}; ?>">Home</a></ul>
             <ul class="nav-link <?php if ($GLOBALS['page'] == 'about') {echo "active-page"} ?>"><a href="<?php if ($GLOBALS['page'] == 'about') {echo '#'} else {echo $GLOBALS['site'].'about'}; ?>">About Flex</a></ul>
@@ -36,7 +36,7 @@
             <ul>login</ul>
             <ul>register</ul>
         </li>
-    </header>
+    </div>
     <?php
         if ($GLOBALS['page'] !== NULL) {
             include $_SERVER['DOCUMENT_ROOT'].'/src/php/'.$GLOBALS['page'].'.php';
