@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?></title>
-    <link rel="stylesheet" href="/core/css/stylesheet.css">
+    <link rel="stylesheet" href="/src/css/stylesheet.css">
     <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
@@ -26,3 +26,20 @@
 </head>
 <body>
     <script>0</script> 
+    <?php
+        if ($GLOBALS['page'] !== NULL) {
+            include $_SERVER['DOCUMENT_ROOT'].'/src/php/'.$GLOBALS['page'].'.php';
+        }
+    ?>
+    <div class='footer'>
+        <div class="footer-information-area">
+            <p class='footer-60 center float-center'>Built with ♥ by Grey for <a class="footer-links" href="localhost:8080">FlexBot</a></p>
+            <p class='footer-40 center float-right'><a class="footer-links" href="#">Back To Top</a></p>
+        </div>
+        <hr>
+        <div class="copyright">
+            <p>Copyright © 2021 Flex Bot Inc. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
