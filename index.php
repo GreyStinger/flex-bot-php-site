@@ -16,6 +16,7 @@ Route::add('/', function() {
 
 Route::add('/about', function() {
     $title = 'About Flex';
+    $GLOBALS['page'] = 'about'
     include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
 });
 
