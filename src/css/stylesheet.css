@@ -1,5 +1,5 @@
 body {
-  font: sans-serif;
+  font-family: sans-serif;
   background-color: #caf7e3;
 }
 
@@ -18,15 +18,22 @@ body {
   display: flex;
   flex-direction: row;
 }
+.navi-bar ul {
+  list-style: none;
+}
+
+.login-reg {
+  display: flex;
+  flex-direction: row;
+}
+.login-reg ul {
+  list-style: none;
+}
 
 .navi-link {
   display: flex;
   flex-direction: row;
   text-decoration: none;
-}
-
-.login-reg {
-  display: flex;
 }
 
 .footer {

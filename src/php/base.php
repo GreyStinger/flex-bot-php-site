@@ -28,9 +28,9 @@
     <script>0</script>
     <div class="header">
         <li class="navi-bar">
-            <ul class="navi-link <?php if ($GLOBALS['page'] == 'home') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'home') {echo '#';} else {echo $GLOBALS['site'];} ?>">Home</a></ul>
-            <ul class="navi-link <?php if ($GLOBALS['page'] == 'about') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'about') {echo '#';} else {echo $GLOBALS['site'].'about';} ?>">About Flex</a></ul>
-            <ul class="navi-link <?php if ($GLOBALS['page'] == 'contact') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'contact') {echo '#';} else {echo $GLOBALS['site'].'contact';} ?>">Contact Us</a></ul>
+            <ul class="navi-link float-left <?php if ($GLOBALS['page'] == 'home') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'home') {echo '#';} else {echo $GLOBALS['site'];} ?>">Home</a></ul>
+            <ul class="navi-link float-left <?php if ($GLOBALS['page'] == 'about') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'about') {echo '#';} else {echo $GLOBALS['site'].'about';} ?>">About Flex</a></ul>
+            <ul class="navi-link float-left <?php if ($GLOBALS['page'] == 'contact') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'contact') {echo '#';} else {echo $GLOBALS['site'].'contact';} ?>">Contact Us</a></ul>
         </li>
         <li class="login-reg">
             <ul><a class="navi-link float-right <?php if ($GLOBALS['page'] == 'login') {echo "active-page";} ?>" href="<?php echo $GLOBALS['site'].'login'; ?>">login</a></ul>
