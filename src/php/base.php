@@ -33,8 +33,8 @@
             <ul class="navi-link <?php if ($GLOBALS['page'] == 'contact') {echo "active-page";} ?>"><a href="<?php if ($GLOBALS['page'] == 'contact') {echo '#';} else {echo $GLOBALS['site'].'contact';} ?>">Contact Us</a></ul>
         </li>
         <li class="navi-bar float-right">
-            <ul><a class="navi-link <?php if ($GLOBALS['page'] == 'login') {echo "active-page";} ?>" href="<?php echo $GLOBALS['site'].'login'; ?>">login</a></ul>
-            <ul><a class="navi-link <?php if ($GLOBALS['page'] == 'register') {echo "active-page";} ?>" href="<?php echo $GLOBALS['site'].'register'; ?>">register</a></ul>
+            <ul><a class="navi-link <?php if ($GLOBALS['page'] == 'login') {echo "active-page";} ?>" href="<?php if($GLOBALS['page'] == 'login') {echo '#';} else {echo $GLOBALS['site'].'login';} ?>">login</a></ul>
+            <ul><a class="navi-link <?php if ($GLOBALS['page'] == 'register') {echo "active-page";} ?>" href="<?php if($GLOBALS['page'] == 'register') {echo '#';} else {echo $GLOBALS['site'].'register';} ?>">register</a></ul>
         </li>
     </div>
     <?php

@@ -34,14 +34,14 @@ Route::add('/contact', function() {
 Route::add('/login', function() {
     $title = 'Login';
     $GLOBALS['page'] = 'login';
-    include $_SERVER['DOCUMENT_ROOT'].'src/php/base.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
 });
 
 // Register Register Page
 Route::add('/register', function() {
     $title = 'Register';
     $GLOBALS['page'] = 'register';
-    include $_SERVER['DOCUMENT_ROOT'].'src/php/base.php';
+    include $_SERVER['DOCUMENT_ROOT'].'/src/php/base.php';
 });
 
 // Register 404 Not Found Page
