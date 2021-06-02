@@ -1,5 +1,8 @@
 TODO: Remove Back To Top And Lower Footer-Information-Area Margin If Screen Width Is Under A Certain Width
 TODO: Finish Nav    - Finish SASS For Main Header
                     - Add Image To The Left Of Nav Links
+                    - Make Header Links Look Nice And Have Underlining When The Page Is Active
+                    - Remove Back To Top On Mobile I Don't Need It
+                    - Make Back To Top Work Better And Not Use #
                     - Finish Routing For Login And Register
                     - Check That The Page Is Nicely Scrollable By Putting Dummy Content Onto The Screen
