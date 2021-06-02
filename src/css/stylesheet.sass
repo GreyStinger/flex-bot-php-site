@@ -1,6 +1,10 @@
+$bg_colour: #caf7e3 
+$alt_bg_colour: #f8eded
+$main_link_colour: #fc5404
+  
 body
   font-family: sans-serif
-  background-color: #caf7e3
+  background-color: $bg_colour
 
 .header
   position: absolute
@@ -10,33 +14,30 @@ body
   min-height: 50px
   height: auto
   align-items: center
-  background-color: #f8eded
+  background-color: $alt_bg_colour
+  display: flex
+  flex-wrap: wrap
+  flex-direction: row
 
 .navi-bar
   display: flex
   flex-direction: row
-
-  ul
-    list-style: none
-
-.login-reg
-  display: flex
-  flex-direction: row
+  align-items: center
 
   ul
     list-style: none
 
 .navi-link
-  display: flex
-  flex-direction: row
   text-decoration: none
+  white-space: nowrap
+  color: $main_link_colour
 
 .footer
   position: absolute
   bottom: 0px
   left: 0px
   right: 0px
-  background-color: #f8eded
+  background-color: $alt_bg_colour
   min-height: 75px
   height: auto
   align-items: center
@@ -44,11 +45,11 @@ body
   hr
     margin-right: 3%
     margin-left: 3%
-    color: #fc5404
+    color: $main_link_colour
 
 .footer-information-area
   display: flex
-  flex: 1 1 40px
+  // flex: 1 1 40px
   flex-direction: row
   flex-wrap: nowrap
   align-items: center
@@ -83,4 +84,4 @@ body
 
 .footer-link
   text-decoration: none
-  color: #fc5404
+  color: $main_link_colour

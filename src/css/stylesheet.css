@@ -12,28 +12,24 @@ body {
   height: auto;
   align-items: center;
   background-color: #f8eded;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 .navi-bar {
   display: flex;
   flex-direction: row;
+  align-items: center;
 }
 .navi-bar ul {
   list-style: none;
 }
 
-.login-reg {
-  display: flex;
-  flex-direction: row;
-}
-.login-reg ul {
-  list-style: none;
-}
-
 .navi-link {
-  display: flex;
-  flex-direction: row;
   text-decoration: none;
+  white-space: nowrap;
+  color: #fc5404;
 }
 
 .footer {
@@ -54,7 +50,6 @@ body {
 
 .footer-information-area {
   display: flex;
-  flex: 1 1 40px;
   flex-direction: row;
   flex-wrap: nowrap;
   align-items: center;
