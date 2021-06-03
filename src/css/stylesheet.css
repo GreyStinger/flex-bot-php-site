@@ -3,6 +3,10 @@ body {
   background-color: #caf7e3;
 }
 
+#page-links {
+  margin-right: auto;
+}
+
 .header {
   position: absolute;
   top: 0px;
